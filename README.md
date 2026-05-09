@@ -4,17 +4,17 @@
 
 ## 公開ページ
 
-`honne-diagnosis/`
+`https://ai-self-lab.com/`
 
 ## 構成
 
 ```text
-honne-diagnosis/
-  index.html
-  style.css
-  script.js
+index.html
+style.css
+script.js
 assets/
   ai-self-lab-icon.png
+CNAME
 ```
 
 ## GitHub Pages設定
@@ -27,4 +27,4 @@ GitHubの `Settings` → `Pages` で以下を設定します。
 
 公開後のURL例:
 
-`https://ユーザー名.github.io/リポジトリ名/honne-diagnosis/`
+`https://ai-self-lab.com/`
