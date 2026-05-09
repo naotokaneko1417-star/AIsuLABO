@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>あなたの本音タイプ診断 | AI自己理解ラボ</title>
+    <meta
+      name="description"
+      content="15問で、今のあなたがどのパターンで本音を見失いやすいのかを整理する無料診断です。"
+    />
+    <link rel="icon" href="../assets/ai-self-lab-icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" id="top">
+        <div class="brand-row">
+          <img class="brand-icon" src="../assets/ai-self-lab-icon.png" alt="" />
+          <div>
+            <p class="brand-name">AI自己理解ラボ</p>
+            <p class="brand-note">診断と問いで、モヤモヤを整理する場所</p>
+          </div>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">無料診断</p>
+            <h1>あなたの本音タイプ診断</h1>
+            <p class="lead">
+              15問に答えると、今のあなたがどのパターンで本音を見失いやすいのかを整理できます。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#diagnosis">診断を始める</a>
+              <a class="secondary-button" href="#types">5タイプを見る</a>
+            </div>
+          </div>
+          <div class="hero-panel" aria-label="診断の概要">
+            <div class="panel-line teal"></div>
+            <div class="panel-line coral"></div>
+            <div class="panel-line lavender"></div>
+            <p>本音は、強い願望としてはっきり出てくるとは限りません。</p>
+            <p>疲れ、違和感、迷い、少しの羨ましさとして出てくることもあります。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro">
+        <h2>診断の使い方</h2>
+        <p>
+          各質問で一番近いものを選んでください。最後に、自動であなたに近いタイプを表示します。同点の場合は、複数タイプをあわせて読んでみてください。
+        </p>
+        <p class="note">
+          結果は決めつけではありません。今の自分を少し見えやすくするための、ひとつの問いとして使ってください。
+        </p>
+      </section>
+
+      <section class="diagnosis" id="diagnosis">
+        <div class="section-heading">
+          <p class="eyebrow">15 Questions</p>
+          <h2>質問に答える</h2>
+        </div>
+        <div class="progress-wrap" aria-hidden="true">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p class="progress-text" id="progressText">0 / 15 回答済み</p>
+        <form id="quizForm" class="quiz-form"></form>
+        <div class="form-actions">
+          <button class="primary-button" type="button" id="showResultButton">結果を見る</button>
+          <button class="text-button" type="button" id="resetButton">回答をリセット</button>
+        </div>
+        <p class="error-message" id="errorMessage" role="alert"></p>
+      </section>
+
+      <section class="result-section" id="result" hidden>
+        <div class="result-card">
+          <p class="eyebrow">Result</p>
+          <h2 id="resultTitle"></h2>
+          <p id="resultLead" class="result-lead"></p>
+          <div class="score-list" id="scoreList" aria-label="タイプ別スコア"></div>
+          <div class="result-block">
+            <h3>本音を見つけるヒント</h3>
+            <ul id="resultTips"></ul>
+          </div>
+          <div class="result-block">
+            <h3>今日の問い</h3>
+            <p id="resultQuestion" class="quote"></p>
+          </div>
+          <div class="result-block">
+            <h3>AIプロンプト</h3>
+            <p id="resultPrompt" class="prompt-box"></p>
+            <button class="secondary-button" type="button" id="copyPromptButton">プロンプトをコピー</button>
+            <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="types" id="types">
+        <div class="section-heading">
+          <p class="eyebrow">5 Types</p>
+          <h2>5つの本音タイプ</h2>
+        </div>
+        <div class="type-grid" id="typeGrid"></div>
+      </section>
+
+      <section class="closing">
+        <h2>最後に</h2>
+        <p>
+          本音は、すぐにきれいな言葉になるとは限りません。最初は、違和感、疲れ、迷い、少しの羨ましさとして出てくることもあります。
+        </p>
+        <p>
+          この診断結果は、あなたを分類するためのものではありません。今の自分を少し見えやすくするための入口です。
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p>
+          この診断は、医療・治療・専門的助言ではなく、自己理解と思考整理のためのセルフケアコンテンツです。深刻な不調や生活に支障がある悩みについては、専門機関や信頼できる相談先の利用も検討してください。
+        </p>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
