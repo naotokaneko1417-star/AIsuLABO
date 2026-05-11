@@ -60,10 +60,29 @@ input {
   gap: 12px;
 }
 
-.brand-icon {
+.brand-icon,
+.brand-fallback {
   width: 46px;
   height: 46px;
   border-radius: 50%;
+}
+
+.brand-icon {
+  object-fit: cover;
+}
+
+.brand-fallback {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.brand-icon[hidden] + .brand-fallback {
+  display: inline-flex;
 }
 
 .brand-name,
